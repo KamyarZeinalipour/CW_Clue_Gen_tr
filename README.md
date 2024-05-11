@@ -1,6 +1,6 @@
 # A Turkish Crossword Clue Generator
 
-[[`Paper`](paper_link)] [[`Dataset TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`Dataset T4TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-turkish-crossword-clue-generator)]
+[[`Paper`](paper_link)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-turkish-crossword-clue-generator)]
 
 This repository contains the code for the first Turkish crossword puzzle generator that harnesses the power of large language models (LLMs) to empower education. Our paper, **"A Turkish Crossword Clue Generator"**, delves into the details of the project.
 
@@ -44,7 +44,11 @@ pip install transformers peft pandas
 ```
 
 # <a name="GettingStarted"></a>Getting Started
- 
+
+ ## Datasets
+- **The *TAC* dataset** of over 180,000 answer-clue pairs fuels the generation of contextually relevant clues for given answers.
+- **The *T4TAC* dataset**  with over 35,000 text, answer, category, and clue samples enables tailored clue creation for specific texts and keywords within desired categories.
+The *TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/*TAC*). The *T4TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC). By downloading the datasets you agree that you have read and accepted the terms of the A Turkish Crossword Clue Generator Research License.
 
 ### Models
 
@@ -74,10 +78,6 @@ python generate_clues.py --model_path <model_path> --input_file <input_file_path
 - The script includes error handling and retry mechanisms to handle potential issues during generation.
 - The **temperature** parameter controls the creativity of the generated clues. A lower temperature leads to more deterministic and coherent clues.
 - The script automatically resumes processing from the last processed row in the output file, allowing for interrupted runs to be continued.
-
-## Datasets
-
-The dataset *TAC* can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/*TAC*). The dataset *T4TAC* can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC). By downloading the datasets you agree that you have read and accepted the terms of the A Turkish Crossword Clue Generator Research License.
   
 ## License
 
