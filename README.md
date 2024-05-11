@@ -11,8 +11,8 @@ This repository contains the code for the first Turkish crossword puzzle generat
   - A dataset of over 180,000 answer-clue pairs fuels the generation of contextually relevant clues for given answers.
   - A separate dataset with over 35,000 text, answer, category, and clue samples enables tailored clue creation for specific texts and keywords within desired categories.
 - Interactive Learning Tool: Go beyond mere entertainment! This generator fosters interactive learning, promoting memory retention, vocabulary expansion, and problem-solving skills.
-- Annotated Results: We explored two crossword clue creation methods: one with set answers and another categorizing text-generated clues. Both approaches allow educators to inject custom clues for specific learning objectives (see paper). A sample Turkish crossword crafted using this system is depicted in [Figure 1](#evaluation-of-three-llm-models) (see paper).
-### Evaluation of Three LLM Models (Figure 1)
+- Annotated Results: We explored two crossword clue creation methods: one with set answers and another categorizing text-generated clues. Both approaches allow educators to inject custom clues for specific learning objectives (see paper). A sample Turkish crossword crafted using this system is depicted in [Figure 1](#a-sample-turkish-crossword) (see paper).
+### A sample Turkish Crossword (Figure 1)
 <p float="left">
   <img src="assets/tr_crossword (1).png?raw=true" width="75.5%" />
 </p>
