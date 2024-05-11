@@ -1,6 +1,6 @@
 # Turkish Crossword Clue Generator
 
-[[`Paper`](paper_link)] [[`Project`](https://segment-anything.com/)] [[`Dataset TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`Dataset T4TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-turkish-crossword-clue-generator)]
+[[`Paper`](paper_link)] [[`Dataset TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`Dataset T4TAC`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-turkish-crossword-clue-generator)]
 
 This repository contains code for generating Turkish crossword clues and answer pairs using two different language models: llama-chat-7b and llama-chat-13b.
 
