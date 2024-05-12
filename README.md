@@ -85,7 +85,7 @@ The model is licensed under the [MIT License](LICENSE).
 
 ## Contributors
 
-The Segment Anything project was made possible with the help of many contributors (alphabetical):
+A Turkish Crossword Clue Generator paper was made possible with the help of many contributors (alphabetical):
 
 Kamyar Zeinalipour, Leonardo Rigutini, Marco Gori, Marco Maggini, Yusuf Gökberk Keptiğ
 
