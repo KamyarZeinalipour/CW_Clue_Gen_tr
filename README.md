@@ -1,6 +1,6 @@
 # A Turkish Crossword Clue Generator
 
-[[`Paper`](paper_link)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-a-turkish-crossword-clue-generator)] 
+[[`Paper`](https://arxiv.org/abs/2405.07035)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-a-turkish-crossword-clue-generator)] 
 
 This repository contains the code for the first Turkish crossword puzzle generator that harnesses the power of large language models (LLMs) to empower education. Our paper, **"A Turkish Crossword Clue Generator"**, delves into the details of the project.
 
