@@ -1,6 +1,6 @@
 # A Turkish Crossword Clue Generator
 
-[[`Paper`](paper_link)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-turkish-crossword-clue-generator)]
+[[`Paper`](paper_link)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-a-turkish-crossword-clue-generator)] 
 
 This repository contains the code for the first Turkish crossword puzzle generator that harnesses the power of large language models (LLMs) to empower education. Our paper, **"A Turkish Crossword Clue Generator"**, delves into the details of the project.
 
@@ -93,13 +93,12 @@ Kamyar Zeinalipour, Leonardo Rigutini, Marco Gori, Marco Maggini, Yusuf Gökberk
 If you use llama13B_turkish_crossword_clue_gen or llama7B_turkish_crossword_clue_gen in your research, please use the following BibTeX entry.
 
 ```
-@article{article,
-  title={A Turkish Educational Crossword Puzzle
-Generator},
-  author={Kamyar Zeinalipour, Yusuf Gökberk
-Keptiğ, Marco Maggini, Leonardo
-Rigutini, and Marco Gori},
-  journal={arXiv:number},
-  year={2024}
+@misc{zeinalipour2024turkish,
+      title={A Turkish Educational Crossword Puzzle Generator}, 
+      author={Kamyar Zeinalipour and Yusuf Gökberk Keptiğ and Marco Maggini and Leonardo Rigutini and Marco Gori},
+      year={2024},
+      eprint={2405.07035},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
