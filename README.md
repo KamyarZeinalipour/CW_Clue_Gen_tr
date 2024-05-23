@@ -35,15 +35,19 @@ Here, we present the results of our evaluation:
 
 This project introduces the Turkish Educational Generator, a novel LLM-powered tool designed to create dynamic crosswords in Turkish for educational purposes.  Educators can leverage this system to generate subject-specific crosswords, enhancing student engagement and learning retention.  We further contribute to the field by providing two comprehensive datasets: one with expert-crafted answer-clue pairs and another with generated clues with corresponding text, answers, and categories.  These datasets are valuable resources for educational system development and research.  Future work includes expanding our tool to additional languages and exploring advanced LLM techniques to refine clue generation, pushing the boundaries of educational technology.
 
-## Installation
-The code requires `python>=3.8`,  `pandas>=1.5.3`, `peft>=0.10.0`, `torch>=1.13.1+cu117` and as well as
-`transformers>=4.40.2`. 
+Getting Started
+---------------
+### Prerequisites
 
-```
-pip install transformers peft pandas
-```
+* `Python 3.7` or later
+* `PyTorch 1.9` or later
+* `Pandas 1.5.3` or later (install with `pip install pandas`)
+* Transformers library (install with `pip install transformers`)
+* PEFT library (install with `pip install peft`)
 
-# <a name="GettingStarted"></a>Getting Started
+### Installation
+
+1. Clone this repository: `git clone https://github.com/your-username/code-completion-generation.git`
 
  ## Datasets
 - **The *TAC* dataset** of over 180,000 answer-clue pairs fuels the generation of contextually relevant clues for given answers.
@@ -61,11 +65,8 @@ The llama13B_turkish_crossword_clue_gen model can be downloaded [here](https://h
 
 ### Usage
 
-
-### Prepare Input:
-Create a CSV file (e.g., input.csv) with a column named text containing the prompts (answers) for which you want to generate clues.
-
-### Run the Script
+1. Prepare Input: Create a CSV file (e.g., input.csv) with a column named text containing the prompts (answers) for which you want to generate clues.
+2. Run the script using the following command:
 ```
 python generate_clues.py --model_path <model_path> --input_file <input_file_path> --output_file <output_file_path> --temperature <set_temp>
 ```
@@ -73,6 +74,12 @@ python generate_clues.py --model_path <model_path> --input_file <input_file_path
 - Replace the input <input_file_path> with your input file.
 - Replace the input <output_file_path> with your output file path.
 - Replace <set_temp> with your desired temperature. 
+### Example
+```
+python generate_clues.py --model_path /path/to/model --input_file input.csv --output_file output.csv --temperature 0.5
+```
+
+This will generate code completions for the prompts in `input.csv` using the pre-trained model at `/path/to/model` and save the output to `output.csv` with a temperature value of 0.5.
   
 ## Notes
 - The script includes error handling and retry mechanisms to handle potential issues during generation.
