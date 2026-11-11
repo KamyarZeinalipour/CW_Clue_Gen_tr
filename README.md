@@ -1,6 +1,6 @@
 # A Turkish Crossword Clue Generator
 
-[[`Paper`](https://arxiv.org/abs/2405.07035)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-a-turkish-crossword-clue-generator)] 
+[[`Paper`](https://arxiv.org/abs/2405.07035)] [[`HF Collection`](https://huggingface.co/collections/Kamyar-zeinalipour/turkish-educational-crosswords-aied-2024-6af4852ff9a91556f58237ca)] [[`TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC)] [[`T4TAC Dataset`](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC)] [[`BibTeX`](#citing-a-turkish-crossword-clue-generator)] 
 
 This repository contains the code for the first Turkish crossword puzzle generator that harnesses the power of large language models (LLMs) to empower education. Our paper, **"A Turkish Crossword Clue Generator"**, delves into the details of the project.
 
@@ -47,21 +47,33 @@ Getting Started
 
 ### Installation
 
-1. Clone this repository: `git clone https://github.com/your-username/code-completion-generation.git`
+1. Clone this repository: `git clone https://github.com/KamyarZeinalipour/CW_Clue_Gen_tr.git`
 
  ## Datasets
 - **The *TAC* dataset** of over 180,000 answer-clue pairs fuels the generation of contextually relevant clues for given answers.
 - **The *T4TAC* dataset**  with over 35,000 text, answer, category, and clue samples enables tailored clue creation for specific texts and keywords within desired categories.
-The *TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/*TAC*). The *T4TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC). By downloading the datasets you agree that you have read and accepted the terms of the A Turkish Crossword Clue Generator Research License.
+The *TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/TAC). The *T4TAC* dataset can be downloaded [here](https://huggingface.co/datasets/Kamyar-zeinalipour/T4TAC). By downloading the datasets you agree that you have read and accepted the terms of the A Turkish Crossword Clue Generator Research License.
 
 ### Models
 
-The models used in this project are:
+| Model | Adapter |
+|---|---|
+| Llama-2-7b-chat | [llama7B_turkish_crossword_clue_gen](https://huggingface.co/Kamyar-zeinalipour/llama7B_turkish_crossword_clue_gen) |
+| Llama-2-13b-chat | [llama13B_turkish_crossword_clue_gen](https://huggingface.co/Kamyar-zeinalipour/llama13B_turkish_crossword_clue_gen) |
 
-- llama13B_turkish_crossword_clue_gen
-- llama7B_turkish_crossword_clue_gen
+All datasets and models are gathered in the
+[Turkish Educational Crosswords collection](https://huggingface.co/collections/Kamyar-zeinalipour/turkish-educational-crosswords-aied-2024-6af4852ff9a91556f58237ca).
 
-The llama13B_turkish_crossword_clue_gen model can be downloaded [here](https://huggingface.co/Kamyar-zeinalipour/llama13B_turkish_crossword_clue_gen). The llama7B_turkish_crossword_clue_gen model can be downloaded [here](https://huggingface.co/Kamyar-zeinalipour/llama7B_turkish_crossword_clue_gen).
+### Automatic evaluation
+
+ROUGE scores of generated clues against GPT-4-Turbo references:
+
+| Model | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|---|---:|---:|---:|
+| GPT-3.5-Turbo (base) | 24.57 | 8.48 | 16.61 |
+| Llama-2-7b-chat, fine-tuned | 22.50 | 5.00 | 14.80 |
+| Llama-2-13b-chat, fine-tuned | 25.66 | 6.45 | 17.24 |
+| GPT-3.5-Turbo, fine-tuned | **39.96** | **18.08** | **23.48** |
 
 ### Usage
 
