@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or the Turkish crossword data, please cite the paper below."
+title: "A Turkish Educational Crossword Puzzle Generator"
+repository-code: "https://github.com/KamyarZeinalipour/CW_Clue_Gen_tr"
+license: MIT
+authors:
+  - family-names: "Zeinalipour"
+    given-names: "Kamyar"
+  - family-names: "Keptiğ"
+    given-names: "Yusuf Gökberk"
+  - family-names: "Maggini"
+    given-names: "Marco"
+  - family-names: "Rigutini"
+    given-names: "Leonardo"
+  - family-names: "Gori"
+    given-names: "Marco"
+preferred-citation:
+  type: conference-paper
+  title: "A Turkish Educational Crossword Puzzle Generator"
+  authors:
+    - family-names: "Zeinalipour"
+      given-names: "Kamyar"
+    - family-names: "Keptiğ"
+      given-names: "Yusuf Gökberk"
+    - family-names: "Maggini"
+      given-names: "Marco"
+    - family-names: "Rigutini"
+      given-names: "Leonardo"
+    - family-names: "Gori"
+      given-names: "Marco"
+  collection-title: "25th International Conference on Artificial Intelligence in Education (AIED 2024), Late-Breaking Results track, Recife, Brazil"
+  conference:
+    name: "AIED 2024"
+    city: "Recife"
+    country: BR
+  month: 7
+  year: 2024
+  url: "https://arxiv.org/abs/2405.07035"
