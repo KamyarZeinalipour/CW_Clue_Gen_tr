@@ -98,6 +98,39 @@ This will generate code completions for the prompts in `input.csv` using the pre
 - The **temperature** parameter controls the creativity of the generated clues. A lower temperature leads to more deterministic and coherent clues.
 - The script automatically resumes processing from the last processed row in the output file, allowing for interrupted runs to be continued.
   
+<!-- hf-usage -->
+## Load the models and data from Hugging Face
+
+Everything released with the paper is in the Hugging Face collection [Turkish Educational Crosswords (AIED 2024)](https://huggingface.co/collections/Kamyar-zeinalipour/turkish-educational-crosswords-aied-2024-6af4852ff9a91556f58237ca).
+
+```python
+from datasets import load_dataset
+
+data = load_dataset("Kamyar-zeinalipour/T4TAC")
+data = load_dataset("Kamyar-zeinalipour/TAC")
+```
+
+The fine-tuned models are LoRA adapters. `AutoPeftModelForCausalLM` downloads the base model named in the adapter's configuration and applies the adapter on top of it:
+
+```python
+import torch
+from peft import AutoPeftModelForCausalLM
+from transformers import AutoTokenizer
+
+repo = "Kamyar-zeinalipour/llama7B_turkish_crossword_clue_gen"
+tokenizer = AutoTokenizer.from_pretrained("Kamyar-zeinalipour/llama7B_turkish_crossword_clue_gen")
+model = AutoPeftModelForCausalLM.from_pretrained(repo, torch_dtype=torch.bfloat16, device_map="auto")
+```
+
+| Adapter | Base model |
+|---|---|
+| [llama7B_turkish_crossword_clue_gen](https://huggingface.co/Kamyar-zeinalipour/llama7B_turkish_crossword_clue_gen) | [meta-llama/Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) |
+| [llama13B_turkish_crossword_clue_gen](https://huggingface.co/Kamyar-zeinalipour/llama13B_turkish_crossword_clue_gen) | [meta-llama/Llama-2-13b-chat-hf](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf) |
+
+Some base models (Llama, Gemma, Mistral Small/Nemo) are gated: accept their licence on their Hugging Face page and log in with `huggingface-cli login` before loading.
+
+<!-- /hf-usage -->
+
 ## License
 
 The model is licensed under the [MIT License](LICENSE).
